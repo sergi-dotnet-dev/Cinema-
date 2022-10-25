@@ -1,0 +1,33 @@
+﻿@using SearchEngine.Code.Models
+@model IEnumerable<Film>
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta />
+</head>
+<body>
+    <header>Films you love search</header>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Rating</td>
+            <td>Year</td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Rating</td>
+                <td>@item.Year</td>
+            </tr>
+        }
+    </table>
+
+    <script>
+
+    </script>
+</body>
+</html>
