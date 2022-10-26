@@ -24,4 +24,8 @@
     <Folder Include="Site\js\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\Downloads\LibOwin\LibOwin-master\src\LibOwin\LibOwin.csproj" />
+  </ItemGroup>
+
 </Project>

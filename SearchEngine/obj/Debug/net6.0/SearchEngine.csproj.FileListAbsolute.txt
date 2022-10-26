@@ -64,3 +64,5 @@ C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\obj\Debug\net6.0\SearchEngine.RazorAssemblyInfo.cache
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\obj\Debug\net6.0\SearchEngine.RazorAssemblyInfo.cs
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\obj\Debug\net6.0\SearchEngine.csproj.CopyComplete
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\LibOwin.dll
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\LibOwin.pdb

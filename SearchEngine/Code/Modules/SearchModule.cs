@@ -6,8 +6,9 @@ namespace SearchEngine.Code.Modules;
 
 public class SearchModule : NancyModule
 {
-    public SearchModule(IFilmStore filmStore, IEventHandler eventHandler) : base("/search")
+    public SearchModule(IFilmStore filmStore/*, IEventHandler eventHandler*/) : base("/search")
     {
+       
         Get("/{substring}", parameters =>
             {
                 var subString = (String)parameters.substring;

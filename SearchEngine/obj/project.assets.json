@@ -2407,6 +2407,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "LibOwin/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LibOwin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibOwin.dll": {}
+        }
       }
     }
   },
@@ -7583,10 +7592,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "LibOwin/1.0.0": {
+      "type": "project",
+      "path": "../../../../../../../Downloads/LibOwin/LibOwin-master/src/LibOwin/LibOwin.csproj",
+      "msbuildProject": "../../../../../../../Downloads/LibOwin/LibOwin-master/src/LibOwin/LibOwin.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "LibOwin >= 1.0.0",
       "Microsoft.AspNetCore.Owin >= 6.0.10",
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
@@ -7621,7 +7636,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Downloads\\LibOwin\\LibOwin-master\\src\\LibOwin\\LibOwin.csproj": {
+              "projectPath": "C:\\Downloads\\LibOwin\\LibOwin-master\\src\\LibOwin\\LibOwin.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
