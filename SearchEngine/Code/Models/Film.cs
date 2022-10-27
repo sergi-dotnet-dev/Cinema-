@@ -13,6 +13,5 @@ public class Film
     [Column(TypeName = "text(20000)")] public String Description { get; set; } = null!;
     [Column(TypeName = "blob")] public Byte[] Image { get; set; } = null!;
     public List<FilmCategory> Categories { get; set; } = new();
-    public List<Review>? Reviews { get; set; }
-    public List<Actor> Actors { get; set; } = new();
+    public List<FilmActor> Actors { get; set; } = new();
 }

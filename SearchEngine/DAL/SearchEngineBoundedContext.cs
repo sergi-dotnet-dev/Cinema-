@@ -3,18 +3,20 @@ using SearchEngine.Code.Models;
 
 namespace SearchEngine.DAL;
 
-public class SearchEngineBoundedContext : DbContext
+public sealed class SearchEngineBoundedContext : DbContext
 {
     private readonly String _connectionString;
-    public SearchEngineBoundedContext(String connString) => _connectionString = connString;
+    public SearchEngineBoundedContext(String connString)
+        => _connectionString = connString;
 
     public DbSet<Film> Films { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<Actor> Actors { get; set; }
-    public DbSet<Review> Reviews { get; set; }
+    public DbSet<User> Users { get; set; }
 
     public DbSet<FilmCategory> FilmCategories { get; set; }
     public DbSet<FilmActor> FilmActors { get; set; }
+    public DbSet<FilmUser> FilmUsers { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

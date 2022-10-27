@@ -23,9 +23,8 @@ public class DiBootsrapper : DefaultNancyBootstrapper
     protected override void ConfigureApplicationContainer(TinyIoCContainer container)
     {
         container.Register(_configuration);
-        var _context = new SearchEngineBoundedContext(_configuration.GetConnectionString("Default"));
-        container.Register<SearchEngineBoundedContext>(_context);
-        container.Register<IReviewClient, ReviewClient>().AsMultiInstance();
+        var _context = new ReviewBoundedContext(_configuration.GetConnectionString("Default"));
+        container.Register<ReviewBoundedContext>(_context);
     }
     protected override void ConfigureRequestContainer(TinyIoCContainer container, NancyContext context)
     {

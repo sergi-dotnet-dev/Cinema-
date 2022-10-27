@@ -1,4 +1,5 @@
-﻿using SearchEngine.Abstract.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using SearchEngine.Abstract.Interfaces;
 using SearchEngine.Code.Models;
 using SearchEngine.DAL;
 
@@ -15,11 +16,16 @@ public class FilmStore : IFilmStore
         return _context.Films
             .Select(f => new Film() { Name = f.Name, Id = f.Id, Year = f.Year, Image = f.Image, Rating = f.Rating })
             .Where(f => f.Name.Contains(subStr))
-            .OrderByDescending(f => f.Rating);
+            .OrderByDescending(f => f.Rating)
+            .Take(5);
     }
 
     public IEnumerable<Film> Get(Int32[] categories)
     {
-        throw new NotImplementedException();
+        return _context.Films
+            .Select(f => new Film() { Name = f.Name, Id = f.Id, Year = f.Year, Image = f.Image, Rating = f.Rating })
+            .Include(f => f.Categories.Where(c => categories.All(i => i == c.CategoryId)))
+            .OrderByDescending(f=>f.Rating)
+            .Take(5);
     }
 }
