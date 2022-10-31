@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchEngine", "SearchEngin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibOwin", "..\..\..\..\..\..\Downloads\LibOwin\LibOwin-master\src\LibOwin\LibOwin.csproj", "{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewService", "ReviewService\ReviewService.csproj", "{60CF432E-8CA9-401C-A051-4E0F172DA9B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationService", "RegistrationService\RegistrationService.csproj", "{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CF432E-8CA9-401C-A051-4E0F172DA9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CF432E-8CA9-401C-A051-4E0F172DA9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CF432E-8CA9-401C-A051-4E0F172DA9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CF432E-8CA9-401C-A051-4E0F172DA9B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

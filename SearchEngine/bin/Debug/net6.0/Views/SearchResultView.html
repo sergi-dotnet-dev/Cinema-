@@ -1,0 +1,26 @@
+﻿    <html>
+    <head>
+        <meta />
+    </head>
+    <body>
+        <header>Films you love search</header>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Rating</td>
+                <td>Year</td>
+            </tr>
+            @Each.Film
+            <tr>
+                <td>@Current.Name</td>
+                <td>@Current.Rating</td>
+                <td>@Current.Year</td>
+            </tr>
+            @EndEach
+        </table>
+
+        <script>
+
+        </script>
+    </body>
+</html>

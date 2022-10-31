@@ -1,3 +1,9 @@
-﻿namespace SearchEngine.Abstract.Interfaces;
+﻿using Microsoft.Extensions.Logging;
+using SearchEngine.Code.Models;
 
-public interface IEventHandler { }
+namespace SearchEngine.Abstract.Interfaces;
+
+public interface IEventHandler {
+    public void Raise(String eventName, Int32 userId, Object content);
+    //public IEnumerable<Event> GetEvents(Int64 firstEventSeqNumber, Int64 lastEventSeqNumber);
+}

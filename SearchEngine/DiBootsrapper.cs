@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Nancy;
+using Nancy.Bootstrapper;
 using Nancy.TinyIoc;
 using SearchEngine.Abstract.Infrastructure;
 using SearchEngine.Abstract.Interfaces;
@@ -20,6 +21,7 @@ public class DiBootsrapper : DefaultNancyBootstrapper
             .AddEnvironmentVariables()
             .Build();
     }
+
     protected override void ConfigureApplicationContainer(TinyIoCContainer container)
     {
         container.Register(_configuration);

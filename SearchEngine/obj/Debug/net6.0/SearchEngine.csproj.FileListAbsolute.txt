@@ -61,8 +61,9 @@ C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\obj\Debug\net6.0\SearchEngine.RazorAssemblyInfo.cache
-C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\obj\Debug\net6.0\SearchEngine.RazorAssemblyInfo.cs
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\obj\Debug\net6.0\SearchEngine.csproj.CopyComplete
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\LibOwin.dll
 C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\LibOwin.pdb
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\Views\SearchResultView.html
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\Views\FilmInfoView.html
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine\bin\Debug\net6.0\Views\Index.html

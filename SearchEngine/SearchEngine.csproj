@@ -28,4 +28,16 @@
     <ProjectReference Include="..\..\..\..\..\..\..\Downloads\LibOwin\LibOwin-master\src\LibOwin\LibOwin.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Views\Index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\FilmInfoView.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\SearchResultView.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

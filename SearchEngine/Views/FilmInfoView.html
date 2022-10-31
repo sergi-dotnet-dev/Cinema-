@@ -1,0 +1,28 @@
+﻿@using SearchEngine.Code.Models
+@model Film
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta />
+</head>
+<body>
+    <header>@Model.Name</header>
+    <div>
+        <img />
+        <p>
+            @foreach (var item in Model.Categories)
+            {
+            @item.Category.Name
+            }
+        </p>
+        <p>@Model.Year</p>
+        <p>@Model.Rating</p>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>
