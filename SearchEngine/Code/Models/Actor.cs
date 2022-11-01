@@ -10,5 +10,4 @@ public class Actor
     public String Name { get; set; } = null!;
     public Int32 BornYear { get; set; }
     [Column(TypeName ="blob")] public Byte[]? Photo { get; set; }
-    public List<FilmActor> Films { get; set; } = new();
 }

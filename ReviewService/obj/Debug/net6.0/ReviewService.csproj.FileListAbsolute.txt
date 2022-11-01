@@ -1,0 +1,6 @@
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\ReviewService\obj\Debug\net6.0\ReviewService.csproj.AssemblyReference.cache
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\ReviewService\obj\Debug\net6.0\ReviewService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\ReviewService\obj\Debug\net6.0\ReviewService.AssemblyInfoInputs.cache
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\ReviewService\obj\Debug\net6.0\ReviewService.AssemblyInfo.cs
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\ReviewService\obj\Debug\net6.0\ReviewService.csproj.CoreCompileInputs.cache
+C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\ReviewService\obj\Debug\net6.0\ReviewService.MvcApplicationPartsAssemblyInfo.cache

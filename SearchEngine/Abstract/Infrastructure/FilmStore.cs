@@ -32,14 +32,12 @@ public class FilmStore : IFilmStore
             .OrderByDescending(f => f.Rating)
             .Take(5);
     }
-    public IIncludableQueryable<Film, Actor> Get(Int32 filmId)
+    public IEnumerable<Film> Get(Int32 filmId)
     {
         return _context.Films
                .Select(f => new Film() { Id = f.Id, Name = f.Name, Year = f.Year, Image = f.Image, Rating = f.Rating, Description = f.Description })
                .Where(f => f.Id == filmId)
                .Include(f => f.Categories.Where(c => c.FilmId == f.Id))
-               .ThenInclude(c => c.Category.Name)
-               .Include(f => f.Actors.Where(a => a.FilmId == f.Id))
-               .ThenInclude(a => a.Actor);
+               .ThenInclude(c => c.Category.Name);
     }
 }

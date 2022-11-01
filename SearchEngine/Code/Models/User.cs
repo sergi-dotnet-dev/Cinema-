@@ -9,5 +9,4 @@ public class User
     public Int32 Id { get; set; }
     [Column(TypeName = "nvarchar(40)")] public String Name { get; set; } = null!;
     [Column(TypeName =("blob"))] public Byte[]? Photo { get; set; }
-    public List<FilmUser>? FavoriteFilms { get; set; }
 }

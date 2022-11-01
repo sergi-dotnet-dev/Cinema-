@@ -11,19 +11,16 @@ public sealed class SearchEngineBoundedContext : DbContext
 
     public DbSet<Film> Films { get; set; }
     public DbSet<Category> Categories { get; set; }
-    public DbSet<Actor> Actors { get; set; }
     public DbSet<Event> Events { get; set; }
 
     public DbSet<FilmCategory> FilmCategories { get; set; }
-    public DbSet<FilmActor> FilmActors { get; set; }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<FilmCategory>()
             .HasKey(i => new { i.FilmId, i.CategoryId });
-        modelBuilder.Entity<FilmActor>()
-            .HasKey(i => new { i.FilmId, i.ActorId });
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
