@@ -16,11 +16,10 @@ public class FilmStore : IFilmStore
     {
         return _context.Films
             .Select(f => new Film() { Name = f.Name, Id = f.Id, Year = f.Year, Image = f.Image, Rating = f.Rating })
-            .Include(f => f.Categories.Where(c => c.FilmId == f.Id))
-            .ThenInclude(c => c.Category.Name)
             .Where(f => f.Name.Contains(subStr))
             .OrderByDescending(f => f.Rating)
-            .Take(5);
+            .Take(5)
+            .ToList();
     }
 
     public IEnumerable<Film> Get(Int32[] categories)

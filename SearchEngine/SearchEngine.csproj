@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Code\Modules\" />
     <Folder Include="Site\css\" />
     <Folder Include="Site\js\" />
   </ItemGroup>
