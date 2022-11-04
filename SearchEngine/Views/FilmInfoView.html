@@ -1,10 +1,4 @@
-﻿@using SearchEngine.Code.Models
-@model Film
-@{
-    Layout = null;
-}
-
-<html>
+﻿<html>
 <head>
     <meta />
 </head>
@@ -12,12 +6,12 @@
     <header>@Model.Name</header>
     <div>
         <img />
-        <p>
-            @foreach (var item in Model.Categories)
-            {
-            @item.Category.Name
-            }
-        </p>
+        <!--@Each.ViewBag.reviews
+        <p>@Current.Content</p>
+        @EndEach
+        @Each.ViewBag.actors
+        <p>@Current.Name</p>
+        @EndEach-->
         <p>@Model.Year</p>
         <p>@Model.Rating</p>
     </div>

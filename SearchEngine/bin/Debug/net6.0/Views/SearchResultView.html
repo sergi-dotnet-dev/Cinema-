@@ -9,12 +9,16 @@
             <td>Name</td>
             <td>Rating</td>
             <td>Year</td>
+            <td>Category</td>
         </tr>
         @Each
         <tr>
             <td>@Current.Name</td>
             <td>@Current.Rating</td>
             <td>@Current.Year</td>
+            <td>
+                
+            </td>
             <td>
                 <button name="selectedFilm" formmethod="get" formaction="https://localhost:7129/search/" value=@Current.Id></button>
             </td>

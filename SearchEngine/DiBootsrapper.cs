@@ -28,10 +28,11 @@ public class DiBootsrapper : DefaultNancyBootstrapper
         var _context = new SearchEngineBoundedContext(_configuration.GetConnectionString("Default"));
         container.Register<SearchEngineBoundedContext>(_context);
         container.Register<IReviewClient, ReviewClient>().AsMultiInstance();
+        container.Register<IActorClient, ActorClient>().AsMultiInstance();
     }
     protected override void ConfigureRequestContainer(TinyIoCContainer container, NancyContext context)
     {
         container.Register<IFilmStore, FilmStore>().AsMultiInstance();
-        //container.Register<IEventHandler, >();
+        container.Register<IEventSender, EventSender>().AsMultiInstance();
     }
 }

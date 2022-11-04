@@ -6,7 +6,7 @@ namespace SearchEngine.Code.Modules;
 
 public sealed class SearchModule : NancyModule
 {
-    public SearchModule(IFilmStore filmStore) : base("/search")
+    public SearchModule(IFilmStore filmStore, IReviewClient reviewClient, IActorClient actorClient) : base("/search")
     {
         Get("/{substring}", parameters =>
             {
@@ -20,10 +20,14 @@ public sealed class SearchModule : NancyModule
         //    var films = filmStore.Get(categories);
         //    return View["SearchResultView", films];
         //});
-        Get("/{film:int}", parameters =>
+        Get("/{filmId:int}", parameters =>
         {
-            var film = (Film)parameters.film;
-            return View["FilmInfoView", film];
+            var filmId = (Int32)parameters.filmId;
+            var concreteFilm = filmStore.Get(filmId).First();
+            //this.ViewBag.reviews = reviewClient.GetFilmReview(filmId);
+            //this.ViewBag.actors = actorClient.GetFilmActor(filmId);
+            
+            return View["FilmInfoView", concreteFilm];
         });
     }
 }

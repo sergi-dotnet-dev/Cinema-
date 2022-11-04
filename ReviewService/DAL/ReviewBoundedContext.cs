@@ -6,9 +6,11 @@ namespace ReviewService.DAL;
 public sealed class ReviewBoundedContext : DbContext
 {
     private readonly String _connectionString;
+    public ReviewBoundedContext() { }
     public ReviewBoundedContext(String connString) 
         => _connectionString = connString;
     public DbSet<Review> Reviews { get; set; }
+    public DbSet<ReviewEvent> ReviewEvents { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -20,6 +22,6 @@ public sealed class ReviewBoundedContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         base.OnConfiguring(optionsBuilder);
-        optionsBuilder.UseSqlServer(_connectionString);
+        optionsBuilder.UseSqlServer("Server=INSPECTOR\\SQLEXPRESS;Database=ReviewDb;Trusted_Connection=True;MultipleActiveResultSets=True");
     }
 }

@@ -4,11 +4,11 @@ using SearchEngine.DAL;
 
 namespace SearchEngine.Abstract.Infrastructure;
 
-public class EventHandler : IEventHandler
+public class EventSender : IEventSender
 {
     private readonly SearchEngineBoundedContext _context;
 
-    public EventHandler(SearchEngineBoundedContext context) => _context = context;
+    public EventSender(SearchEngineBoundedContext context) => _context = context;
 
     //public IEnumerable<Event> GetEvents(Int64 firstEventSeqNumber, Int64 lastEventSeqNumber)
     //{

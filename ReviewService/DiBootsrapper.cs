@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Nancy;
 using Nancy.TinyIoc;
-using SearchEngine.Abstract.Infrastructure;
-using SearchEngine.Abstract.Interfaces;
-using SearchEngine.DAL;
-using System.Runtime.CompilerServices;
+using ReviewService.Abstract.Infrastructure;
+using ReviewService.Abstract.Interfaces;
+using ReviewService.DAL;
 
 namespace SearchEngine;
 
@@ -28,7 +27,7 @@ public class DiBootsrapper : DefaultNancyBootstrapper
     }
     protected override void ConfigureRequestContainer(TinyIoCContainer container, NancyContext context)
     {
-        container.Register<IFilmStore, FilmStore>().AsMultiInstance();
-        //container.Register<IEventHandler, >();
+        container.Register<IReviewStore, ReviewStore>().AsMultiInstance();
+        container.Register<IEventSender, EventSender>().AsMultiInstance();
     }
 }

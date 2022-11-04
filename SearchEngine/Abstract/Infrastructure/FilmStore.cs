@@ -27,16 +27,16 @@ public class FilmStore : IFilmStore
         return _context.Films
             .Select(f => new Film() { Name = f.Name, Id = f.Id, Year = f.Year, Image = f.Image, Rating = f.Rating })
             .Include(f => f.Categories.Where(c => categories.All(i => i == c.CategoryId)))
-            .ThenInclude(c=>c.Category.Name)
+            .ThenInclude(c => c.Category.Name)
             .OrderByDescending(f => f.Rating)
             .Take(5);
     }
     public IEnumerable<Film> Get(Int32 filmId)
     {
         return _context.Films
-               .Select(f => new Film() { Id = f.Id, Name = f.Name, Year = f.Year, Image = f.Image, Rating = f.Rating, Description = f.Description })
                .Where(f => f.Id == filmId)
-               .Include(f => f.Categories.Where(c => c.FilmId == f.Id))
-               .ThenInclude(c => c.Category.Name);
+               .Include(f => f.Categories)
+               .ThenInclude(c=>c.Category)
+               .ToList();
     }
 }
