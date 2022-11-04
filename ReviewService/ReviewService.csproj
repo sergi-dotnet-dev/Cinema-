@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\Infrastructure\" />
-    <Folder Include="Code\Modules\" />
     <Folder Include="Code\Views\" />
     <Folder Include="Site\css\" />
     <Folder Include="Site\js\" />

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewService", "ReviewServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationService", "RegistrationService\RegistrationService.csproj", "{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLibrary", "EventLibrary\EventLibrary.csproj", "{68DD60FE-DD76-4539-8F42-A40B47398ADA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68DD60FE-DD76-4539-8F42-A40B47398ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DD60FE-DD76-4539-8F42-A40B47398ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DD60FE-DD76-4539-8F42-A40B47398ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DD60FE-DD76-4539-8F42-A40B47398ADA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
