@@ -31,12 +31,13 @@ public class FilmStore : IFilmStore
             .OrderByDescending(f => f.Rating)
             .Take(5);
     }
-    public IEnumerable<Film> Get(Int32 filmId)
+    public Film Get(Int32 filmId)
     {
         return _context.Films
-               .Where(f => f.Id == filmId)
                .Include(f => f.Categories)
-               .ThenInclude(c=>c.Category)
-               .ToList();
+               .ThenInclude(c => c.Category)
+               .Select(f => f)
+               .Where(f => f.Id == filmId).First()
+               ;
     }
 }

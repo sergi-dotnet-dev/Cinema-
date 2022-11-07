@@ -5,10 +5,10 @@ namespace SearchEngine.DAL;
 
 public sealed class SearchEngineBoundedContext : DbContext
 {
-    private readonly String _connectionString;
-    public SearchEngineBoundedContext(String connString)
-        => _connectionString = connString;
-
+    public SearchEngineBoundedContext(DbContextOptions<SearchEngineBoundedContext> options) : base(options)
+    {
+        
+    }
     public DbSet<Film> Films { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<Event> Events { get; set; }
@@ -21,10 +21,5 @@ public sealed class SearchEngineBoundedContext : DbContext
 
         modelBuilder.Entity<FilmCategory>()
             .HasKey(i => new { i.FilmId, i.CategoryId });
-    }
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        base.OnConfiguring(optionsBuilder);
-        optionsBuilder.UseSqlServer(_connectionString);
     }
 }

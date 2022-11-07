@@ -5,13 +5,9 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchEngine", "SearchEngine\SearchEngine.csproj", "{F056DAF9-5967-4D16-A065-6640D7D3B3C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibOwin", "..\..\..\..\..\..\Downloads\LibOwin\LibOwin-master\src\LibOwin\LibOwin.csproj", "{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewService", "ReviewService\ReviewService.csproj", "{60CF432E-8CA9-401C-A051-4E0F172DA9B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationService", "RegistrationService\RegistrationService.csproj", "{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLibrary", "EventLibrary\EventLibrary.csproj", "{68DD60FE-DD76-4539-8F42-A40B47398ADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistrationService", "RegistrationService\RegistrationService.csproj", "{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +19,6 @@ Global
 		{F056DAF9-5967-4D16-A065-6640D7D3B3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F056DAF9-5967-4D16-A065-6640D7D3B3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F056DAF9-5967-4D16-A065-6640D7D3B3C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEC3A29E-B94E-4843-9F63-D89FDD2EBE69}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60CF432E-8CA9-401C-A051-4E0F172DA9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60CF432E-8CA9-401C-A051-4E0F172DA9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60CF432E-8CA9-401C-A051-4E0F172DA9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,10 +27,6 @@ Global
 		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD3FC4CA-683F-4BA7-92DA-F55A799602FE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68DD60FE-DD76-4539-8F42-A40B47398ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68DD60FE-DD76-4539-8F42-A40B47398ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68DD60FE-DD76-4539-8F42-A40B47398ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68DD60FE-DD76-4539-8F42-A40B47398ADA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

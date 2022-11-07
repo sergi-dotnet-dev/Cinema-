@@ -14,3 +14,11 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\buras\OneDrive\Рабочий стол\Development\Cinema!\SearchEngine
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/buras/OneDrive/Рабочий стол/Development/Cinema\!/SearchEngine/Views/Search/FilmInfoView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoXEZpbG1JbmZvVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/buras/OneDrive/Рабочий стол/Development/Cinema\!/SearchEngine/Views/Search/SearchResultView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoXFNlYXJjaFJlc3VsdFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

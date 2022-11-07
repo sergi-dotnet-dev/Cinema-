@@ -1,0 +1,35 @@
+﻿@using SearchEngine.Code.Models
+@model IEnumerable<Film>
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <header>Films you love search</header>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Rating</td>
+            <td>Year</td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Rating</td>
+                <td>@item.Year</td>
+                <td>
+                    <button name="selectedFilm" formmethod="get" formaction="https://localhost:7129/search/choosenfilm" value=@item.Id></button>
+                </td>
+            </tr>
+        }
+    </table>
+
+    <script>
+
+    </script>
+</body>
+</html>

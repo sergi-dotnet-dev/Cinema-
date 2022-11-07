@@ -7,6 +7,7 @@ public class RegistrationBoundedContext : DbContext
 {
     private readonly String _connString;
     public DbSet<User> Users { get; set; }
+    public DbSet<UserEvent> UserEvents { get; set; }
 
     public RegistrationBoundedContext(String connString)
     {
