@@ -13,7 +13,7 @@ public class ReviewClient : IReviewClient
          .WaitAndRetryAsync(3, attempt => TimeSpan.FromMilliseconds(100 * Math.Pow(2, attempt)));
     private static async Task<HttpResponseMessage> RequestReviewFromReviewService(Int32 filmId)
     {
-        var reviewResource = String.Format($"/reviews?filmId={filmId}");
+        var reviewResource = String.Format($"/Review/AddReview?filmId={filmId}");
         using (HttpClient httpClient = new())
         {
             httpClient.BaseAddress = new Uri(@"https://localhost:7287");

@@ -39,6 +39,8 @@ public class SearchController : Controller
             //return view(startpage);
         }
         var concreteFilm = _filmStore.Get(filmId);
+        var filmReviews = _reviewClient.GetFilmReview(filmId);
+        ViewBag.reviews = filmReviews;
         return View("FilmInfoView", concreteFilm);
     }
 }

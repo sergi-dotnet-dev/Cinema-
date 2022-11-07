@@ -1,24 +1,25 @@
-using Microsoft.AspNetCore.Server.Kestrel.Core;
-using Nancy.Owin;
+using Microsoft.EntityFrameworkCore;
+using ReviewService.Abstract.Infrastructure;
+using ReviewService.Abstract.Interfaces;
+using ReviewService.DAL;
+
+var _configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddEnvironmentVariables()
+            .Build();
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.Configure<KestrelServerOptions>(options =>
-{
-    options.AllowSynchronousIO = true;
-});
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ReviewBoundedContext>(options => options.UseSqlServer(_configuration.GetConnectionString("Default")));
+builder.Services.AddTransient<IEventSender, EventSender>();
+builder.Services.AddTransient<IReviewStore, ReviewStore>();
+
 var app = builder.Build();
 
-app.UseOwin(buildFunc =>
-{
-    buildFunc(next => env =>
-    {
-        var context = new LibOwin.OwinContext(env);
-        var method = context.Request.Method;
-        var path = context.Request.Path;
-        Console.WriteLine($"Got request: {method} {path}");
-        return next(env);
-    });
-    buildFunc.UseNancy();
-});
-
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthorization();
 app.Run();

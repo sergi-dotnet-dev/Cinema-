@@ -22,7 +22,7 @@
                 <td>@item.Rating</td>
                 <td>@item.Year</td>
                 <td>
-                    <button name="selectedFilm" formmethod="get" formaction="https://localhost:7129/search/choosenfilm" value=@item.Id></button>
+                    <input type="button" value="Icon" onclick="location.href='@Url.Action("ChoosenFilm", "Search" , new{filmId=@item.Id} )'" />
                 </td>
             </tr>
         }

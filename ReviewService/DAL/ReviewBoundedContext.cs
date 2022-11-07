@@ -5,10 +5,9 @@ namespace ReviewService.DAL;
 
 public sealed class ReviewBoundedContext : DbContext
 {
-    private readonly String _connectionString;
-    public ReviewBoundedContext() { }
-    public ReviewBoundedContext(String connString) 
-        => _connectionString = connString;
+    public ReviewBoundedContext(DbContextOptions<ReviewBoundedContext> options) : base(options)
+    { }
+
     public DbSet<Review> Reviews { get; set; }
     public DbSet<ReviewEvent> ReviewEvents { get; set; }
 
@@ -18,10 +17,5 @@ public sealed class ReviewBoundedContext : DbContext
 
         modelBuilder.Entity<Review>()
                     .HasKey(k => new { k.UserId, k.FilmId });
-    }
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        base.OnConfiguring(optionsBuilder);
-        optionsBuilder.UseSqlServer("Server=INSPECTOR\\SQLEXPRESS;Database=ReviewDb;Trusted_Connection=True;MultipleActiveResultSets=True");
     }
 }

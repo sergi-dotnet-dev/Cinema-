@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hQSF75IDpzeoAFrciesL0CwLcXr8we/E6tB6OesK8wnl7vTKqoArerEaL2984koij77BZzayPcfbvnHq5FOC0w==",
+  "dgSpecHash": "X7mSN5wLv01UsplEqspEkkg0GBKXnUHP9LopEHa4NEVoF3j+vhU6Wi+uMkg57dB/2hQ1Rd6CoVOUJlKRUgbwgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\buras\\OneDrive\\Рабочий стол\\Development\\Cinema!\\SearchEngine\\SearchEngine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\buras\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\buras\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
-    "C:\\Users\\buras\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\buras\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\buras\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\buras\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
@@ -50,7 +48,6 @@
     "C:\\Users\\buras\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\buras\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\buras\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\buras\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\buras\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
