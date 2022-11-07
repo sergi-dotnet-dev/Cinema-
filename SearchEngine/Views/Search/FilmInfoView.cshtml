@@ -10,13 +10,18 @@
 <body>
     <header>@Model.Name</header>
     <div>
-        <img />
+        <img src="@Model.Image"/>
        @foreach (var item in Model.Categories)
         {
             <p>@item.Category.Name</p>
         }
         <p>@Model.Year</p>
         <p>@Model.Rating</p>
+        @foreach (var review in ViewBag.reviews)
+        {
+            var _review = (Review)review;
+            <p>@_review.Content</p>
+        }
     </div>
     <script>
 

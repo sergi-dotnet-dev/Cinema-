@@ -1,5 +1,4 @@
-﻿using Nancy;
-using ReviewService.Code.Models;
+﻿using ReviewService.Code.Models;
 
 namespace ReviewService.Abstract.Interfaces;
 
