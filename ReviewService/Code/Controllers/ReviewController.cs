@@ -15,7 +15,7 @@ public class ReviewController : Controller
     }
 
     [HttpGet]
-    public IActionResult GetReview(Int32 filmId)
+    public JsonResult GetReview(Int32 filmId)
     {
         var response = _reviewStore.Get(filmId);
         return Json(response);

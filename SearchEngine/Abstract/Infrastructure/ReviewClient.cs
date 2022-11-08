@@ -1,5 +1,4 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Polly;
 using SearchEngine.Abstract.Interfaces;
 using SearchEngine.Code.Models;
@@ -13,7 +12,7 @@ public class ReviewClient : IReviewClient
          .WaitAndRetryAsync(3, attempt => TimeSpan.FromMilliseconds(100 * Math.Pow(2, attempt)));
     private static async Task<HttpResponseMessage> RequestReviewFromReviewService(Int32 filmId)
     {
-        var reviewResource = String.Format($"/Review/AddReview?filmId={filmId}");
+        var reviewResource = String.Format($"/Review/GetReview?filmId={filmId}");
         using (HttpClient httpClient = new())
         {
             httpClient.BaseAddress = new Uri(@"https://localhost:7287");

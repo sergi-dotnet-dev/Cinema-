@@ -22,4 +22,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
+app.UseEndpoints(endpoint=>
+{
+    endpoint.MapControllerRoute(name:"default",pattern: "{controller=Review}/{action=GetReview}/{filmId?}");
+});
 app.Run();

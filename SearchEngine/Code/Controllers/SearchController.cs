@@ -31,7 +31,7 @@ public class SearchController : Controller
 
     //}
     [HttpGet]
-    public IActionResult ChoosenFilm(Int32 filmId)
+    public async Task<IActionResult> ChoosenFilm(Int32 filmId)
     {
         if (filmId == 0)
         {
@@ -39,7 +39,7 @@ public class SearchController : Controller
             //return view(startpage);
         }
         var concreteFilm = _filmStore.Get(filmId);
-        var filmReviews = _reviewClient.GetFilmReview(filmId);
+        var filmReviews = await _reviewClient.GetFilmReview(filmId);
         ViewBag.reviews = filmReviews;
         return View("FilmInfoView", concreteFilm);
     }
