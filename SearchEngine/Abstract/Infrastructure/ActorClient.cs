@@ -12,10 +12,10 @@ public class ActorClient : IActorClient
          .WaitAndRetryAsync(3, attempt => TimeSpan.FromMilliseconds(100 * Math.Pow(2, attempt)));
     private static async Task<HttpResponseMessage> RequestActorFromService(Int32 filmId)
     {
-        var actorResource = String.Format($"/actors?filmId={filmId}");
+        var actorResource = String.Format($"/actor/getactorlist?filmId={filmId}");
         using (HttpClient httpClient = new())
         {
-            httpClient.BaseAddress = new Uri(@"");
+            httpClient.BaseAddress = new Uri(@"https://localhost:7136");
             return await httpClient.GetAsync(actorResource).ConfigureAwait(false);
         }
     }

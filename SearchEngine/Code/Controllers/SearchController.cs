@@ -40,7 +40,9 @@ public class SearchController : Controller
         }
         var concreteFilm = _filmStore.Get(filmId);
         var filmReviews = await _reviewClient.GetFilmReview(filmId);
+        var actors = await _actorclient.GetFilmActor(filmId);
         ViewBag.reviews = filmReviews;
+        ViewBag.actors = actors;
         return View("FilmInfoView", concreteFilm);
     }
 }

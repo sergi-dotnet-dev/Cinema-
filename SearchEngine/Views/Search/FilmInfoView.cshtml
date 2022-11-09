@@ -22,6 +22,12 @@
             var _review = (Review)review;
             <p>@_review.Content</p>
         }
+        @foreach (var actor in ViewBag.actors)
+        {
+            var _actor = (Actor)actor;
+            <p>@_actor.Name</p>
+            <p>@_actor.BornYear</p>
+        }
     </div>
     <script>
 
